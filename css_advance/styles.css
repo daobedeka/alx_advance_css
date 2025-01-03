@@ -53,6 +53,8 @@ header nav ul li a{
 main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main section.header_banner{
@@ -99,6 +101,16 @@ main section.header_banner div.gsl button{
     color: white;
 
 }
+
+main section.header_banner div.gsl button:hover{
+cursor: pointer;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4), 0px 2px 30px rgba(0,0,0,0.6);
+
+}
+
+
+
+
 
 main section.header_banner div.smile_c{
     display: flex;
@@ -160,3 +172,165 @@ main section.header_banner div.smile_c div.smile{
     font-weight: 400;
     font-size: 16px;
 }
+
+
+main section.tutorials{
+    margin: 0;
+    padding: 0;
+    background-color: #C271FF;
+    width: 1440px;
+    height:392px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.tutorials div.tut{
+    width: 930px;
+    height: 160px;
+    display: flex;
+    align-items: center; 
+    
+}
+
+div.tut div.tut_img{
+    width: 160px;
+    height: 160px;
+}
+
+div.tut div.tut_quote{
+    width: 730px;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 58px;
+    font-family: 'Source San Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+
+}
+
+div.tut div.tut_quote blockquote{
+    font-weight: 400px;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+div.tut div.tut_quote h3{
+    font-weight: 700px;
+    font-size: 22px;
+    
+}
+
+div.tut div.tut_quote p{
+    font-weight: 400px;
+    font-size: 22px;
+    font-style: italic;
+}
+
+main section.popular{
+    display: flex;
+    width: 1228px;
+    border: solid;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    margin-top: 87px;
+    flex-direction: column;
+}
+
+main section.popular h2{
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    width: 294px;
+    margin-top: 0px;
+}
+
+main section.popular h2 span{
+    color: #C271FF;
+}
+
+main section.popular div.vid_1{
+    display: flex;
+    border: solid;
+    height: 335px;
+    margin-top: 75px;
+}
+
+main section.popular div.vid_1 div.pop1{
+    width: 255px;
+    height: 355px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.popular div.vid_1 div.pop1 img.pop1_img{
+    width: 255px;
+    height: 154px;
+}
+
+main section.popular div.vid_1 div.pop1 h3{
+    font-size: 16px;
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px;
+
+}
+
+main section.popular div.vid_1 div.pop1 p{
+    font-size: 14px;
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 13px;
+    margin-bottom: 13px;
+}
+
+main section.popular div.vid_1 div.pop1 div.pop{
+    display: flex;
+    align-items: center;
+}
+
+main section.popular div.vid_1 div.pop1 div.pop img{
+    width: 30px;
+    height: 30px;
+    margin-left: 13px;
+}
+
+
+main section.popular div.vid_1 div.pop1 div.pop h4{
+    margin-left: 13px;
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #C271FF;
+}
+
+
+main section.popular div.vid_1 div.pop1 div.p_star{
+  display: flex;
+  margin:13px;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+main section.popular div.vid_1 div.pop1 div.p_star div.star{
+    display: flex;
+    height:15px ;
+    color: #C271FF;
+    width: 100px;
+    justify-content: space-evenly;
+  }
+
+  main section.popular div.vid_1 div.pop1 div.p_star div.star i{
+    width: 15px;
+    height: 15px;
+  }
+
+  main section.popular div.vid_1 div.pop1 div.p_star p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 13px;
+    font-size: 14px;
+    text-align: right;
+  }
+
+
