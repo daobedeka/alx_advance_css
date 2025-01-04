@@ -416,6 +416,106 @@ color:  #D8D8D8;
 
   main section.membership button:hover{
     cursor: pointer;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2), 0px 8px 30px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 8px 30px rgba(131, 80, 127, 0.2), 0px 8px 30px rgba(133, 47, 107, 0.19);
     
   }
+
+  main section.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    height: 707px;
+    padding: 0;
+  }
+
+  main section.faq h2{
+    font-family:   'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 75px;
+  }
+
+  main section.faq div.faq_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 920px;
+    
+  }
+
+  .faqb1, .faqb2{
+    height: 544px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main section.faq div.faq_1 div.faq_2{
+    width: 350px;
+    height: 242px;
+    
+  }
+
+ .faq_2 h3{
+ font-family:   'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+font-size: 16px;
+font-weight: 700;
+text-align: left;
+
+ }
+
+ .faq_2 p{
+font-family:   'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14px;
+font-weight: 400;
+margin-top: 50px;
+ }
+
+ footer{
+    width: 1440px;
+    height:249px ;
+    background-color: #071629;
+
+ }
+
+ footer section{
+    border: solid;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+ footer section div.content{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-left:168px;
+    margin-right: 168px;
+    margin-top: 95px;
+ }
+ footer section div.content img{
+width: 169px;
+height: 30px;
+ }
+
+ footer section div.content div{
+    width: 130px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ footer section div.content div i{
+    width: 30px;
+    height: 30px;
+ }
+
+ footer section p{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+ }
