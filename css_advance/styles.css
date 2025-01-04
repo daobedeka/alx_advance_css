@@ -230,7 +230,6 @@ div.tut div.tut_quote p{
 main section.popular{
     display: flex;
     width: 1228px;
-    border: solid;
     align-items: center;
     justify-content: center;
     height: 450px;
@@ -252,15 +251,15 @@ main section.popular h2 span{
 
 main section.popular div.vid_1{
     display: flex;
-    border: solid;
     height: 335px;
-    margin-top: 75px;
+    margin-top: 70px;
+    width: 1228px;
+    justify-content: space-between;
 }
 
 main section.popular div.vid_1 div.pop1{
     width: 255px;
     height: 355px;
-    border: solid;
     display: flex;
     flex-direction: column;
 }
@@ -325,12 +324,98 @@ main section.popular div.vid_1 div.pop1 div.p_star div.star{
     height: 15px;
   }
 
+  main section.popular div.vid_1 div.pop1 div.p_star div.star i.dim{
+color:  #D8D8D8;
+;
+  }
+
   main section.popular div.vid_1 div.pop1 div.p_star p{
     margin-top: 10px;
     margin-bottom: 0;
-    margin-right: 13px;
+    margin-left: 80px;
     font-size: 14px;
     text-align: right;
   }
 
+  main section.membership{
+    border:solid;
+    width: 1440px;
+    height: 502px;
+    background-color: #071629;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+ main section.membership h2{
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ main section.membership div.smile{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 1440px;
+ justify-content: space-evenly;
+ margin-top: 43px;
+ margin-bottom: 40px;
+
+ }
+
+ main section.membership div.smile div.smile_3{
+    width: 257px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+ }
+
+ main section.membership div.smile .smile_3 img{
+    width: 43.6px;
+    height: 35.35px;
+    margin-top: 0.03px;
+ }
+
+ main section.membership div.smile div.smile_3  h3{
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:10px;
+ }
+
+ main section.membership div.smile div.smile_3 p{
+    font-family: 'Source Sans Pro',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+    width: 215px;
+    height: 52px;
+
+ }
+
+ main section.membership button{
+    width: 162px;
+    height: 44px;
+    color: white;
+    background-color: #C271FF;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px 6px 8px rgba(0, 0, 0, 0.19);
+    
+    
+ }
+
+  main section.membership button:hover{
+    cursor: pointer;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2), 0px 8px 30px rgba(0, 0, 0, 0.19);
+    
+  }
