@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    width: 1400px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left:50px;
+    margin-right: 50px;
+
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+ }
+
+ header ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 600;
+    
+ }
+
+ header ul li a:hover, header ul li a:active{
+    color: #FF6565;
+ }{
+    color: #FF6565;
+ }
+
+
+
+ main{
+    display: flex;
+    flex-direction: column;
+ }
+
+ section.one{
+    width: 1400px;
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ section.one div.content1{
+    width:634px;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
+ section.one div.content1 h1{
+    font-family: 'Source San Pro','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+ }
+
+ section.one  div.content1 p.content_1{
+    font-weight: bold;
+    font-size: 16px;
+
+ }
+
+ section.one div.content1 button{
+    width: 162px;
+    height: 44px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #FF6565;
+    color:#ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),0px 6px 8px rgba(0, 0, 0, 0.19);
+
+ }
+ section.one div.content1 button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9),0px 6px 8px rgba(0, 0, 0, 0.9);
+ }
+
+
+ section.one div.content1 p.content_2{
+    text-align: center;
+    margin-top: 65px;
+    line-height: 26px;
+ }
+
+
+
+
+ 
