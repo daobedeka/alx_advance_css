@@ -80,12 +80,13 @@ header ul li{
  }
 
  section.one div.content1 h1{
-    font-family: 'Source San Pro','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-1);
     font-size: 32px;
     font-weight: bold;
  }
 
  section.one  div.content1 p.content_1{
+   font-family: var(--font-1);
     font-weight: bold;
     font-size: 16px;
 
@@ -156,7 +157,6 @@ main section#what_we_do div.content_3 p{
 
 main section#what_we_do div.icons{
    width: 944px;
-   border: solid black;
    height: 193px;
    display: flex;
    justify-content: space-evenly;
@@ -166,7 +166,6 @@ main section#what_we_do div.icons{
 main section#what_we_do div.icons div.icon_1{
    width: 207px;
    height: 180px;
-   border: solid;
    display: flex;
    flex-direction: column;
   align-items: center;
@@ -192,4 +191,73 @@ main section#what_we_do div.icons div.icon_1 p.cont_5{
    font-weight: 300;
    line-height: 26px;
    text-align: center;
+}
+
+main section#our_results {
+   width: 1400px;
+   height: 650px;
+   background-image: url(images/headphones_hero_2.jpg);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+main section#our_results h2.rating1{
+   font-family: var(--font-1);
+   font-size: 32px;
+   font-weight: 400;
+   text-align: center;
+   color: var(--color2);
+   line-height: auto;
+
+}
+
+
+main section#our_results p.rating_1{
+   font-family: var(--font-1);
+   font-size: 16px;
+   font-weight: normal;
+   text-align: center;
+   color: var(--color2);
+   line-height: 26px;
+   width: 637px;
+   height: 104px;
+   margin-top: 50px;
+}
+
+main section#our_results div.rating{
+   display: flex;
+   flex-direction: row;
+   width: 1000px;
+   height: 90px;
+   justify-content: space-evenly;
+   margin-top: 100px;
+}
+
+main section#our_results div.rating div.ratin_1{
+   background-image: url(images/pentagone.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 190px;
+   height: 190px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+main section#our_results div.rating div.ratin_1 h2{
+   font-family: var(--font-1);
+color: var(--color2);
+font-size: 46px;
+font-weight: bold;
+}
+main section#our_results div.rating div.ratin_1 p{
+   font-family: var(--font-1);
+   font-size: 14px;
+   color: var(--color2);
+   line-height: 26px;
+   margin-top: 20px;
+
 }
