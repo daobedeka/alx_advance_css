@@ -10,6 +10,10 @@
     --color1:#FF6565;
     --color2:white;
     --color3:#071629;
+    --media_1_width:768px;
+    --media_2_width:375px;
+    --bgimg_w_1:768px;
+    --bgimg_h_1:700px;
 }
 
 
@@ -359,4 +363,368 @@ footer div.content_1 div.social{
 footer div.content_1 div.social i{
    width: 30px;
    height: 30px;
+}
+
+
+/*Creating Media Queries for Medium screens*/
+@media  (max-width:768px) {
+
+   body{
+      background-image: url(images/headphones_hero_1.jpg);
+      background-repeat: no-repeat;
+      background-size: 786px  680px;
+      width: 768px;
+  }
+  
+  header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 633px;
+      height: 32px;
+  }
+  
+  header ul{
+      list-style: none;
+      width: 255px;
+      height: 15px;
+  }
+  
+  header ul li{
+      display: inline-block;
+   }
+  
+   header ul li:last-child{
+     display: none;
+   }
+  
+   header ul li a{
+      text-decoration: none;
+      margin-left: 20px;
+      font-family: var(--font-1);
+      color:var(--color2);
+      font-size: 12px;
+      font-weight: bold;
+      
+   }
+  
+   header ul li a:hover, header ul li a:active{
+      color: var(--color1);
+   }
+
+   header img{
+      width: 161px;
+      height: 32px;
+   }
+  
+  
+  
+   main{
+      display: flex;
+      flex-direction: column;
+   }
+  
+   section.one{
+      width: 768px;
+      height: 680px;
+      color:var(--color2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+  
+   section.one div.content1{
+      width:637px;
+      height: 313px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+   }
+  
+   section.one div.content1 h1{
+      font-family: var(--font-1);
+      font-size: 32px;
+      font-weight: bold;
+   }
+  
+   section.one  div.content1 p.content_1{
+     font-family: var(--font-1);
+      font-weight: bold;
+      font-size: 16px;
+  
+   }
+  
+   section.one div.content1 button{
+      width: 162px;
+      height: 44px;
+      margin-top: 40px;
+      border: none;
+      border-radius: 40px;
+      background-color:var(--color1);
+      color:var(--color2);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),0px 6px 8px rgba(0, 0, 0, 0.19);
+  
+   }
+   section.one div.content1 button:hover, main section#contact div.contact_1 form button:hover{
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9),0px 6px 8px rgba(0, 0, 0, 0.9);
+   }
+  
+  
+   section.one div.content1 p.content_2{
+  
+     font-family: var(--font-1);
+     font-size: 16px;
+     font-weight: 300;
+      text-align: center;
+      margin-top: 65px;
+      line-height: 26px;
+   }
+  
+  
+  main section#what_we_do{
+      width: var(--media_1_width);
+      height: 969;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  
+  main section#what_we_do div.content_3{
+      width: 637px;
+      height: 184px;
+      margin-top: 100px;
+  }
+   
+  main section#what_we_do div.content_3 h2{
+      font-family: var(--font-1);
+      font-size: 32px;
+      font-weight: 400;
+      text-align: center;
+      color: #071629;
+      margin-bottom: 40px;
+  }
+  
+  main section#what_we_do div.content_3 p{
+      font-family: var(--font-1);
+      font-size: 16px;
+      text-align: center;
+      color: #071629;
+      line-height: 26px;
+  }
+  
+  
+  main section#what_we_do div.icons{
+     width: 472px;
+     height: 469px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+  }
+  
+  main section#what_we_do div.icons div.icon_1{
+     width: 207px;
+     height: 180px;
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  main section#what_we_do div.icons div.icon_1 i{
+     width: 94.2px;
+     height: 64.5px;
+     font-size: 64px;
+     color: var(--color1);
+  }
+  
+  main section#what_we_do div.icons div.icon_1 p.cont_4{
+     font-family: var(--font-1);
+     font-size: 18px;
+     font-weight:400;
+     text-align: center;
+  }
+  
+  main section#what_we_do div.icons div.icon_1 p.cont_5{
+     font-family: var(--font-1);
+     font-weight: 300;
+     line-height: 26px;
+     text-align: center;
+  }
+  
+  main section#our_results {
+     width: var(--media_1_width);
+     height: 650px;
+     background-image: url(images/headphones_hero_2.jpg);
+     background-size: 768px 687px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+  }
+  
+  main section#our_results h2.rating1{
+     font-family: var(--font-1);
+     font-size: 32px;
+     font-weight: 400;
+     text-align: center;
+     color: var(--color2);
+     line-height: auto;
+  
+  }
+  
+  
+  main section#our_results p.rating_1{
+     font-family: var(--font-1);
+     font-size: 16px;
+     font-weight: normal;
+     text-align: center;
+     color: var(--color2);
+     line-height: 26px;
+     width: 637px;
+     height: 104px;
+     margin-top: 50px;
+  }
+  
+  main section#our_results div.rating{
+     display: flex;
+     flex-direction: row;
+     width: 1000px;
+     height: 90px;
+     justify-content: space-evenly;
+     margin-top: 100px;
+  }
+  
+  main section#our_results div.rating div.ratin_1{
+     background-image: url(images/pentagone.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 190px;
+     height: 190px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+  
+  main section#our_results div.rating div.ratin_1 h2{
+     font-family: var(--font-1);
+  color: var(--color2);
+  font-size: 46px;
+  font-weight: bold;
+  }
+  main section#our_results div.rating div.ratin_1 p{
+     font-family: var(--font-1);
+     font-size: 14px;
+     color: var(--color2);
+     line-height: 26px;
+     margin-top: 20px;
+  
+  }
+  
+  main section#contact{
+     width: 1400px;
+     height: 500px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main section#contact div.contact_1{
+     width: 335px;
+     height: 373px;
+     
+  }
+  
+  main section#contact div.contact_1  h2{
+  text-align: center;
+  font-family:  var(--font-1);
+  font-size: 32px;
+  }
+  
+  main section#contact div.contact_1 form{
+     display: flex;
+     flex-direction: column;
+     width: inherit;
+     height: 300px;
+     justify-content: space-between;
+     margin-top: 30px;
+  }
+  
+  main section#contact div.contact_1 form div.inputs{
+     width: 335px;
+     height: 29px;
+     border-bottom: 3px ridge;
+  }
+  
+  main section#contact div.contact_1 form input{
+     border: none;
+     padding: 5px;
+  }
+  
+  main section#contact div.contact_1 form button{
+     width: 162px;
+     align-self: center;
+     height: 44px;
+     border-radius: 40px;
+     background-color: var(--color1);
+     color: var(--color2);
+     font-family: var(--font-1);
+     font-size: 14px;
+     font-weight: bold;
+     border: none;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),0px 6px 8px rgba(0, 0, 0, 0.19);
+  }
+  
+  footer{
+     width: 1400px;
+     height: 249px;
+     background-color:var(--color3);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px;
+  }
+  
+  footer p{
+     font-family: var(--font-1);
+     font-size: 12px;
+     color: var(--color2);
+     font-weight: 100;
+  }
+  
+  footer div.content_1{
+     width:1000px;
+     height: 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  
+  footer div.content_1 img{
+     width: 161px;
+     height: 32px;
+  }
+  
+  footer div.content_1 div.social{
+     width: 130px;
+     height: 30px;
+     color: var(--color2);
+     display:  flex;
+     justify-content: space-evenly;
+  }
+  
+  footer div.content_1 div.social i{
+     width: 30px;
+     height: 30px;
+  }
+
+   
 }
