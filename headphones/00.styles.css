@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,*::before{
+box-sizing: border-box;
+}
+
+:root{
+    --ham-width:60px;
+    --ham--height:8px;
+    --ham-gap:6px;
+    --foreground:#333;
+    --background:white;
+    --hamburger_margin:8px;
+    --animation-timing:200ms ease-in-out;
+    --hamburger-height: calc(var(--ham--height)*3+var(--ham-gap)*2);
+    --x-width: calc(var(--hamburger-height)*calc(sqrt(2)))
+}
+
+.hamburger{
+    display:flex;
+    flex-direction: column;
+    gap: var(--ham-gap);
+    width: max-content;
+    position: absolute;
+    top:var(--hamburger_margin);
+    left: var(--hamburger_margin);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger input{
+    content:"";
+    width: var(--ham-width);
+    height: var(--ham--height);
+    background-color: var(--foreground);
+    border-radius: 99999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing);
+}
+
+.hamburger input{
+    appearance: none;
+    margin:0;
+    padding:0;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger input:checked{
+  width: 0;
+  opacity: 0;
+
+}
+
+.hamburger:has(input:checked)::before{
+    rotate: 45deg;
+}
+
+.hamburger:has(input:checked)::after{
+    rotate:-45deg;
+}
