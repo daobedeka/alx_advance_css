@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     box-sizing: border-box;
     margin: 0;
@@ -170,3 +171,308 @@ header ul li{
        height: 32px;
     }
 } 
+=======
+/*--------- SET UP ------ */
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+:root{
+
+    /*Pages width and height*/
+    --media_1_w:1400px;
+    --media_2_w:768px;
+    --media_3_w:375px;
+    --media_1_h:3006px;
+    --media_2_h:3507px;
+    --media_3_h:4860px;
+
+    /*sections width and height*/
+    --media_1_sec_1_h:800px;
+    --media_1_sec_3_h:650px;
+    --footer_1_h:249px;
+
+    /*Header width and height*/
+    --media_1_header_w:1000.39px;
+    --media_1_header_h:32px;
+    --media_1_header_t:27.76px;
+    --media_2_header_t:29px;
+    --media_3_header_t:29px;
+    --media_2_header_w:633px;
+    --media_2_header_h:32px;
+    --media_3_header_w:247px;
+    --media_3_header_h:32px;
+
+    --media_1_header_img_w:161px;
+    --media_1_header_img_h:32px;
+
+    /*Section 1 component*/
+    --media_1_sec1_cont_w:637px;
+    --media_1_sec1_cont_h:313px;
+    --media_2_sec1_cont_w:637px;
+    --media_2_sec1_cont_h:313px;
+    --media_3_sec1_cont_w:357px;
+    --media_3_sec1_cont_h:436px;
+    
+    
+    /*fonts and font sizes*/
+    --font_fm_1:'Source Sans Pro', sans-serif;
+    --font_size_1:32px;
+    --font_size_2:16px;
+    --font_size_3:14px;
+    --font_size_4:12px;
+    --font_weight_1:600;
+    --font_weight_2:500;
+    --font_weight_3:400;
+    --font_weight_4:300;
+    --font_weight_5:200;
+
+    --color_1:white;
+    --color_2:#FF6565;
+
+
+    --bar-width:40px;
+    --bar-height:4px;
+    --bar-gap:5px;
+    --foreground:#333;
+    --background:white;
+}
+
+
+
+body{
+    width: 100%vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- End of Set up ------- */ 
+
+/*--------- Desk Top --------*/
+
+div.container{
+    width: var(--media_1_w);
+    height:var(--media_1_h) ;
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: var(--media_1_w) var(--media_1_sec_1_h);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container header{
+    position: absolute;
+    top: var(--media_1_header_t);
+}
+.container header nav {
+    display: flex;
+    justify-content: space-between;
+    width:var(--media_1_header_w) ;
+    height: var(--media_1_header_h);
+}
+
+
+.container header nav img{
+    width: var(--media_1_header_img_w);
+    height: var(--media_1_header_img_h);
+}
+
+
+.container header nav .menu{
+    display: block;
+}
+
+.menu label.hamburger input[type="checkbox"]{
+    display: none;
+}
+
+.menu ul{
+    display:block;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu ul li a{
+    font-family: var(--font_fm_1);
+    font-size: var(--font_size_4);
+    font-weight: bold;
+    color: var(--color_1);
+}
+
+.menu ul li a:hover{
+    color: var(--color_2);
+}
+
+
+
+/* ------------------ END OF DESK TOP -------------*/
+
+
+
+/*------------------- TABLETE SCREEN ------------*/
+
+@media screen and (max-width:768px){
+
+    div.container{
+        width: var(--media_2_w);
+        height:var(--media_2_h) ;
+        background-image: url(images/headphones_hero_1.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .container header{
+        position: absolute;
+        top: var(--media_2_header_t);
+    }
+    .container header nav {
+        display: flex;
+        justify-content: space-between;
+        width:var(--media_2_header_w) ;
+        height: var(--media_2_header_h);
+    }
+    
+    
+    .container header nav img{
+        width: var(--media_2_header_img_w);
+        height: var(--media_2_header_img_h);
+    }
+    
+    
+    .container header nav .menu{
+        display: block;
+    }
+    
+    .menu label.hamburger input[type="checkbox"]{
+        display: none;
+    }
+    
+    .menu ul{
+        display:block;
+    }
+    
+    .menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .menu ul li a{
+        font-family: var(--font_fm_1);
+        font-size: var(--font_size_4);
+        font-weight: bold;
+        color: var(--color_1);
+    }
+    
+    .menu ul li a:hover{
+        color: var(--color_2);
+    }
+    
+}
+
+
+/* -------------------- MOBILE SCREEN --------------------------------------*/
+
+@media screen and (max-width:375px){
+
+    div.container{
+        width: var(--media_3_w);
+        height:var(--media_3_h) ;
+        background-image: url(images/headphones_hero_1.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .container header{
+        position: absolute;
+        top: var(--media_3_header_t);
+    }
+    .container header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width:var(--media_3_header_w) ;
+        height: var(--media_3_header_h);
+    }
+    
+    
+    .container header nav img{
+        width: var(--media_3_header_img_w);
+        height: var(--media_3_header_img_h);
+    }
+    
+    
+    .container header nav .menu{
+        display: block;
+    }
+
+    .menu label.hamburger input[type="checkbox"]{
+        display: block;
+
+    }
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+}
+.hamburger::before,
+.hamburger::after
+.hamburger input{
+    content: " ";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--color_2);
+
+
+
+}
+    
+    
+
+
+
+    
+    .menu ul{
+        display:block;
+    }
+    
+    .menu ul li{
+        list-style: none;
+        display: block;
+        margin-left: 20px;
+    }
+    
+    .menu ul li a{
+        font-family: var(--font_fm_1);
+        font-size: var(--font_size_4);
+        font-weight: bold;
+        color: var(--color_1);
+    }
+    
+    .menu ul li a:hover{
+        color: var(--color_2);
+    }
+    
+}
+>>>>>>> acd312a4c70f64e74fecae3b2742c8d6b2a8c0d5
