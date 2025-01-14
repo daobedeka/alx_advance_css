@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-1:'Source Sans Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-2: 'Spin Cycle';
+    --color1:#FF6565;
+    --color2:white;
+    --color3:#071629;
+    --media_1_width:768px;
+    --media_2_width:375px;
+    --bgimg_w_1:768px;
+    --bgimg_h_1:700px;
+}
+
+body{
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    width: 1400px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left:50px;
+    margin-right: 50px;
+
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+ }
+
+
+
+ header ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: var(--font-1);
+    color:var(--color2);
+    font-weight: 600;
+    
+ }
+
+ header ul li a:hover, header ul li a:active{
+    color: var(--color1);
+ }
+
+ /*Creating Media Queries for Medium screens*/
+@media  (max-width:768px) {
+
+    body{
+       background-image: url(images/headphones_hero_1.jpg);
+       background-repeat: no-repeat;
+       background-size: 786px  680px;
+       width: 768px;
+   }
+   
+   header{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 633px;
+       height: 32px;
+   }
+   
+   header ul{
+       list-style: none;
+       width: 255px;
+       height: 15px;
+   }
+   
+   header ul li{
+       display: inline-block;
+    }
+   
+
+   
+    header ul li a{
+       text-decoration: none;
+       margin-left: 20px;
+       font-family: var(--font-1);
+       color:var(--color2);
+       font-size: 12px;
+       font-weight: bold;
+       
+    }
+   
+    header ul li a:hover, header ul li a:active{
+       color: var(--color1);
+    }
+ 
+    header img{
+       width: 161px;
+       height: 32px;
+    }
+}
+
+
+@media  (max-width:375px) {
+
+    body{
+       background-image: url(images/headphones_hero_1.jpg);
+       background-size: 357px 869px;
+ 
+       width: var(--media_2_width);
+       background-repeat: no-repeat;
+   }
+   
+   header{
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+       align-items: center;
+       width: 270px;
+       margin-top: 25px;
+       
+   }
+
+   .menu{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 162px;
+    
+   }
+
+
+.menu input[type="checkbox"]{
+    position-try: ;
+    width: 30px;
+
+}
+   
+   header ul{
+       list-style: none;
+       width: 255px;
+       height: 15px;
+   }
+   
+ 
+   
+ 
+   
+    header ul li a{
+       text-decoration: none;
+       margin-left: 20px;
+       font-family: var(--font-1);
+       color:var(--color2);
+       font-size: 12px;
+       font-weight: bold;
+       
+    }
+   
+    header ul li a:hover, header ul li a:active{
+       color: var(--color1);
+    }
+ 
+    header img{
+       width: 161px;
+       height: 32px;
+    }
+} 
