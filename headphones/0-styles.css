@@ -163,7 +163,6 @@ main section.one{
     top: 0;
     width: var(--desk-header-w);
     height: var(--desk-header-h);
-    border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,7 +227,7 @@ main section.one{
 
 
 /*---------TABLETS ------------*/
-/*
+
 @media screen and (max-width:800px) {
     .container{
         width: var(--tab-w);
@@ -292,7 +291,6 @@ main section.one{
     top: 0;
     width: var(--tab-header-w);
     height: var(--tab-header-h);
-    border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -353,7 +351,7 @@ main section.one{
  }
 
 
-}*/
+}
 
 
 /*---------MOBILES ------------*/
@@ -379,7 +377,6 @@ main section.one{
         flex-direction: row-reverse;
         justify-content: space-between;
         top:var(--mob-header-heading-t);
-        border:solid;
         left: 50px;
         
    }
