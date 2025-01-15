@@ -153,8 +153,9 @@ body{
     margin-left: 5px;
 }
 
-header .menu ul li a:hover{
+ul.display1 li a.higl:hover{
     color: var(--color2);
+    cursor: pointer;
 }
 
 main section.one{
@@ -226,7 +227,13 @@ main section.one{
 }
 
 
+
+
+
+
+
 /*---------TABLETS ------------*/
+
 
 @media screen and (max-width:800px) {
     .container{
@@ -355,6 +362,8 @@ main section.one{
 
 
 /*---------MOBILES ------------*/
+
+
 
 @media screen and (max-width:800px) {
     .container{

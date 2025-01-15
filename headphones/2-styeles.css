@@ -1,0 +1,123 @@
+/* General Resetting*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*------DESKTOP------*/
+    --desk-w:1400px;
+    --desk-h:3006px;
+    /*------section header------*/
+        --desk-header-w:1400px;
+        --desk-header-h:800px;
+        --desk-header-heading-w:1000.6px;
+        --desk-header-heading-h:32px;
+        --desk-header-heading-t:27.76px;
+        --desk-header-cont-w:637px;
+        --desk-header-cont-h:313px;
+        --desk-header-cont-top:372px;
+        --desk-header-img-w:162px;
+        --desk-header-img-h:32px;
+        --desk-h1-w:578px;
+        --desk-h1-h:40px;
+        --desk-p1-w:355px;
+        --desk-p1-h:20px;
+        --desk-p2-w:673px;
+        --desk-p2-h:104px;
+        --desk-p2-t:209px;
+        
+
+
+    /*------TABLETS------*/
+    --tab-w:768px;
+    --tab-h:3507px;
+    /*------section header------*/
+    --tab-header-w:768px;
+    --tab-header-h:800px;
+    --tab-header-heading-w:633px;
+    --tab-header-heading-h:32px;
+    --tab-header-heading-t:29px;
+    --tab-header-cont-w:637px;
+    --tab-header-cont-h:313px;
+    --tab-header-cont-top:372px;
+
+    /*------MOBILES------*/
+    --mob-w:480px;
+    --mob-h:4860px;
+    /*------section header------*/
+    --mob-header-w:376px;
+    --mob-header-h:869px;
+    --mob-header-heading-w:247px;
+    --mob-header-heading-h:32px;
+    --mob-header-heading-t:29px;
+    --mob-header-cont-w:375px;
+    --mob-header-cont-h:436px;
+    --mob-header-cont-top:327px;
+    --btn-w:162px;
+    --btn-h:44px;
+    --btn-1-t:100px;
+    --btn-box-shadow:0px 2px 4px rgba(0,0,0.2), 0px 4px 8px rgba(0,0,0.19);
+    --mob-p2-t:254px;
+    --mob-btn-t:145px;
+
+    /*-----Mob Menu -----*/
+    --bar-w:30px;
+    --bar-h:6px;
+    --bar-gap:3px;
+    --foreground:#333;
+    --background:var(--color1);
+    --hamb-margin:5px;
+    --animation-timing:200ms ease-in-out;
+    --ham-h:calc(3*var(--bar-h)+2*var(--bar-gap));
+    --x-width:calc(var(--ham-h)*1.4142135624);
+
+    /*------- Fonts -----*/
+    --font-fam: 'Source Sans Pro', sans-serif;
+    --color1: white;
+    --color2:#FF6565;
+    --h1-font-size:32px;
+    --weight1:bold;
+    --weight2:400;
+    --weight3:300;
+    --weight4:200;
+    --font-size1:32px;
+    --font-size2:16px;
+    --font-size3:14px;
+    --font-size4:12px;
+    
+
+}
+
+body{
+    width: 100%vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------ Desktop view -----*/
+
+
+    .container{
+        width: var(--desk-w);
+        height: var(--desk-h);
+        display: flex;
+        flex-direction: column;
+        background: url(images/headphones_hero_1.jpg);
+        background-repeat: no-repeat;
+        align-items: center;
+        position: relative;
+    }
+
+    .container header{
+        position: absolute;
+        width: var(--desk-header-heading-w);
+        height: var(--desk-header-heading-h);
+        top: var(--desk-header-heading-t);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
