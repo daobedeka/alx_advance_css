@@ -52,6 +52,14 @@
     --tab-header-img-w:161px;
     --tab-header-img-h:32px;
 
+    --tab-h1-w:578px;
+    --tab-h1-h:40px;
+    --tab-p1-w:355px;
+    --desk-p1-h:20px;
+    --tab-p2-w:673px;
+    --tab-p2-h:104px;
+    --tab-p2-t:209px;
+
     /*------MOBILES------*/
     --mob-w:480px;
     --mob-h:4860px;
@@ -122,7 +130,6 @@ body{
         background: url(images/headphones_hero_1.jpg);
         background-repeat: no-repeat;
         align-items: center;
-        border: solid;
     }
 
     .container header{
@@ -171,11 +178,13 @@ body{
       cursor: pointer;
     }
 
+
+    /*--------Section 1------*/
+
     section.one{ 
         width: var(--desk-header-w);
         height: var(--desk-header-h);
         left: var(--desk-header-cont-left);
-        border: solid;
         color: var(--color1);
         font-family: var(--font-fam); 
         display: flex;
@@ -187,7 +196,6 @@ body{
     width: var(--desk-header-cont-w);
     height: var(--desk-header-cont-h);
     margin-top: var(--desk-header-cont-top);
-    border: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,6 +300,67 @@ body{
       color: var(--color2);
       cursor: pointer;
     }
+
+
+     /*--------Section 1------*/
+
+     section.one{ 
+        width: var(--tab-header-w);
+        height: var(--tab-header-h);
+        left: var(--tab-header-cont-left);
+        color: var(--color1);
+        font-family: var(--font-fam); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   section.one .content1{
+    width: var(--tab-header-cont-w);
+    height: var(--tab-header-cont-h);
+    margin-top: var(--tab-header-cont-top);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+   }
+
+   h1{
+    width: var(--tab-h1-w);
+    height: var(--tab-h1-h);
+    font-size: var(--font-size1);
+   }
+
+   p.content_1{
+    width: var(--tab-p1-w);
+    height: var(--tab-p1-h);
+    font-size: var(--font-size3);
+    font-weight: bold;
+   }
+
+   button{
+    width: var(--btn-w);
+    height: var(--btn-h);
+    position: absolute;
+    top: var(--btn-1-t);
+    background-color: var(--color2);
+    border: none;
+    border-radius: var(--btn-r);
+    box-shadow: var(--btn-box-shadow);
+    color: var(--color1);
+    cursor: pointer;
+   }
+
+   p.content_2{
+    font-size: var(--font-size2);
+    position: absolute;
+    top: var(--tab-p2-t);
+    text-align: center;
+    line-height: 26px;
+    font-weight: 300;
+    
+   }
     
 } 
 
@@ -401,7 +470,66 @@ body{
     }
   
 
+ /*--------Section 1------*/
 
+ section.one{ 
+    width: var(--mob-header-w);
+    height: var(--mob-header-h);
+    left: var(--mob-header-cont-left);
+    color: var(--color1);
+    font-family: var(--font-fam); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.one .content1{
+width: var(--mob-header-cont-w);
+height: var(--mob-header-cont-h);
+margin-top: var(--mob-header-cont-top);
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+
+}
+
+h1{
+width: var(--mob-h1-w);
+height: var(--mob-h1-h);
+font-size: var(--font-size1);
+text-align: center;
+}
+
+p.content_1{
+width: var(--mob-p1-w);
+height: var(--mob-p1-h);
+font-size: var(--font-size3);
+font-weight: bold;
+}
+
+button{
+width: var(--btn-w);
+height: var(--btn-h);
+position: absolute;
+top: var(--mob-btn-t);
+background-color: var(--color2);
+border: none;
+border-radius: var(--btn-r);
+box-shadow: var(--btn-box-shadow);
+color: var(--color1);
+cursor: pointer;
+}
+
+p.content_2{
+font-size: var(--font-size2);
+position: absolute;
+top: var(--mob-p2-t);
+text-align: center;
+line-height: 26px;
+font-weight: 300;
+
+}
 
  
 
