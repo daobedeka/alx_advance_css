@@ -20,6 +20,7 @@
         --desk-header-cont-w:637px;
         --desk-header-cont-h:313px;
         --desk-header-cont-top:372px;
+        --desk-header-cont-left:382px;;
         --desk-header-img-w:162px;
         --desk-header-img-h:32px;
         --desk-h1-w:578px;
@@ -44,6 +45,8 @@
     --tab-header-cont-w:637px;
     --tab-header-cont-h:313px;
     --tab-header-cont-top:372px;
+    --desk-header-cont-left:32px;;
+
     --tab-header-heading-menu-w:255px;
     --tab-header-heading-menu-h:15px;
     --tab-header-img-w:161px;
@@ -62,10 +65,12 @@
     --mob-header-img-h:32px;
     --mob-header-cont-w:375px;
     --mob-header-cont-h:436px;
+    --desk-header-cont-left:6px;;
     --mob-header-cont-top:327px;
     --btn-w:162px;
     --btn-h:44px;
     --btn-1-t:100px;
+    --btn-r:40px;
     --btn-box-shadow:0px 2px 4px rgba(0,0,0.2), 0px 4px 8px rgba(0,0,0.19);
     --mob-p2-t:254px;
     --mob-btn-t:145px;
@@ -117,7 +122,7 @@ body{
         background: url(images/headphones_hero_1.jpg);
         background-repeat: no-repeat;
         align-items: center;
-        
+        border: solid;
     }
 
     .container header{
@@ -165,6 +170,66 @@ body{
       color: var(--color2);
       cursor: pointer;
     }
+
+    section.one{ 
+        width: var(--desk-header-w);
+        height: var(--desk-header-h);
+        left: var(--desk-header-cont-left);
+        border: solid;
+        color: var(--color1);
+        font-family: var(--font-fam); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   section.one .content1{
+    width: var(--desk-header-cont-w);
+    height: var(--desk-header-cont-h);
+    margin-top: var(--desk-header-cont-top);
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+   }
+
+   h1{
+    width: var(--desk-h1-w);
+    height: var(--desk-h1-h);
+    font-size: var(--font-size1);
+   }
+
+   p.content_1{
+    width: var(--desk-p1-w);
+    height: var(--desk-p1-h);
+    font-size: var(--font-size3);
+    font-weight: bold;
+   }
+
+   button{
+    width: var(--btn-w);
+    height: var(--btn-h);
+    position: absolute;
+    top: var(--btn-1-t);
+    background-color: var(--color2);
+    border: none;
+    border-radius: var(--btn-r);
+    box-shadow: var(--btn-box-shadow);
+    color: var(--color1);
+    cursor: pointer;
+   }
+
+   p.content_2{
+    font-size: var(--font-size2);
+    position: absolute;
+    top: var(--desk-p2-t);
+    text-align: center;
+    line-height: 26px;
+    font-weight: 300;
+    
+   }
     
 } 
  
@@ -232,7 +297,7 @@ body{
 
 
 /*------ MOBILE SCREENS -----*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:480px) {
     .container{
         position: relative;
         width: var(--mob-w);
@@ -327,7 +392,6 @@ body{
     }
     .hamb:has(input:checked) + .display1 li{ 
         display: block;
-        align-items: center;
         margin-bottom: 20px;
     }
 
@@ -336,8 +400,6 @@ body{
         cursor: pointer;
     }
   
-
-
 
 
 
