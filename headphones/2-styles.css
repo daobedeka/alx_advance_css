@@ -52,6 +52,26 @@
         --sec2-ico-p2-w:207px;
         --sec2-ico-p2-h:52px;
 
+
+        /*------- OUR RESULTS -----*/
+        --desk-our-results-w:var(--desk-w);
+        --desk-our-results-h:650px;
+        --desk-our-results-t:1494px;
+        --desk-our-results-h2-w:448px;
+        --desk-our-results-h2-h:40px;
+        --desk-our-results-p-w:637px;
+        --desk-our-results-p-h:104px;
+        --desk-our-results-rating-w:1000px;
+        --desk-0ur-results-rating-h:190px;
+        --rating-w:190px;
+        --rating-h:190px;
+        --rating-p1-w:89px;
+        --rating-p1-h:26px;
+        --ratting-p2-w:111px;
+        --rating-p2-h:26px;
+        --rating-img-w:190px;
+        --rating-img-h:190px;
+
         
 
 
@@ -95,6 +115,26 @@
     --tab-sec2-cont2-w:472px;
     --tab-sec2-cont2-h:469px;
     --tab-sec2-cont2-t:1190px;
+
+       /*------- OUR RESULTS -----*/
+       --tab-our-results-w:768px;
+       --tab-our-results-h:876px;
+       --tab-our-results-t:1769px;
+       --tab-our-results-h2-w:448px;
+       --tab-our-results-h2-h:40px;
+       --tab-our-results-p-w:637px;
+       --tab-our-results-p-h:104px;
+       --tab-our-results-rating-w:430px;
+       --tab-0ur-results-rating-h:430px;
+       --rating-w:190px;
+       --rating-h:190px;
+       --rating-p1-w:89px;
+       --rating-p1-h:26px;
+       --ratting-p2-w:111px;
+       --rating-p2-h:26px;
+       --rating-img-w:190px;
+       --rating-img-h:190px;
+
 
     /*------MOBILES------*/
     --mob-w:480px;
@@ -142,6 +182,26 @@
         --mob-sec2-cont2-w:207px;
         --mob-sec2-cont2-h:1020px;
         --mob-sec2-cont2-t:1377px;
+
+           /*------- OUR RESULTS -----*/
+           --mob-our-results-w:375;
+           --mob-our-results-h:1491px;
+           --mob-our-results-t:2507px;
+           --mob-our-results-h2-w:266px;
+           --mob-our-results-h2-h:80px;
+           --mob-our-results-p-w:305px;
+           --mob-our-results-p-h:208px;
+           --mob-our-results-rating-w:190px;
+           --mob-our-results-rating-h:1000px;
+           --rating-w:190px;
+           --rating-h:190px;
+           --rating-p1-w:89px;
+           --rating-p1-h:26px;
+           --ratting-p2-w:111px;
+           --rating-p2-h:26px;
+           --rating-img-w:190px;
+           --rating-img-h:190px;
+   
 
     /*------- Fonts -----*/
     --font-fam: 'Source Sans Pro', sans-serif;
@@ -376,8 +436,79 @@ body{
     line-height: 26px;
     text-align: center;
  }
- 
+ /*------- OUR RESULTS -----*/
 
+.our_results{
+    position: absolute;
+    top: var(--desk-our-results-t);
+    width: var(--desk-our-results-w);
+    height: var(--desk-our-results-h);
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--font-fam);
+    color: var(--color1);
+}
+
+.our_results h2{
+    width: var(--desk-our-results-h2-w);
+    height: var(--desk-our-results-h2-h);
+    font-size: var(--font-size1);
+    font-weight: var(--weight2);
+    text-align: center;
+}
+
+.our_results p.rating_1{
+    width: var(--desk-our-results-p-w);
+    height: var(--desk-our-results-p-h);
+    font-size: var(--font-size2);
+    font-weight: var(--weight3);
+    text-align: center;
+}
+
+.our_results .rating{
+    width: var(--desk-our-results-rating-w);
+    height: var(--desk-0ur-results-rating-h);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.our_results .rating .ratin_1{
+    width: var(--rating-w);
+    height: var(--rating-h);
+ 
+    background-image: url(images/pentagone.png);
+    background-size: var(--rating-img-w) var(--rating-img-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ratin_1 h2{
+    font-family: var(--font-fam);
+    font-size: var(--font-size0);
+    width: var(--rating-p1-w);
+    height: var(--rating-p1-h);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ratin_1 p{
+margin-top: 40px;
+
+height: var(--rating-p2-h);
+font-size: var(--font-size3);
+text-align: center;
+
+}
 
 } 
  
@@ -587,6 +718,83 @@ font-family: var(--font-fam);
 font-weight: var(--weight3);
 line-height: 26px;
 text-align: center;
+}
+
+
+/*------- OUR RESULTS -----*/
+
+.our_results{
+    position: absolute;
+    top: var(--tab-our-results-t);
+    width: var(--tab-our-results-w);
+    height: var(--tab-our-results-h);
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--font-fam);
+    color: var(--color1);
+}
+
+.our_results h2{
+    width: var(--tab-our-results-h2-w);
+    height: var(--tab-our-results-h2-h);
+    font-size: var(--font-size1);
+    font-weight: var(--weight2);
+    text-align: center;
+}
+
+.our_results p.rating_1{
+    width: var(--desk-our-results-p-w);
+    height: var(--desk-our-results-p-h);
+    font-size: var(--font-size2);
+    font-weight: var(--weight3);
+    text-align: center;
+}
+
+.our_results .rating{
+    width: var(--tab-our-results-rating-w);
+    height: var(--tab-0ur-results-rating-h);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.our_results .rating .ratin_1{
+    width: var(--rating-w);
+    height: var(--rating-h);
+ 
+    background-image: url(images/pentagone.png);
+    background-size: var(--rating-img-w) var(--rating-img-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ratin_1 h2{
+    font-family: var(--font-fam);
+    font-size: var(--font-size0);
+    width: var(--rating-p1-w);
+    height: var(--rating-p1-h);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ratin_1 p{
+margin-top: 40px;
+
+height: var(--rating-p2-h);
+font-size: var(--font-size3);
+text-align: center;
+
 }
     
 } 
@@ -844,6 +1052,85 @@ font-family: var(--font-fam);
 font-weight: var(--weight3);
 line-height: 26px;
 text-align: center;
+}
+
+
+/*------- OUR RESULTS -----*/
+
+.our_results{
+    position: absolute;
+    top: var(--mob-our-results-t);
+    width: var(--mob-our-results-w);
+    height: var(--mob-our-results-h);
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--font-fam);
+    color: var(--color1);
+}
+
+.our_results h2{
+    width: var(--mob-our-results-h2-w);
+    height: var(--tab-our-results-h2-h);
+    font-size: var(--font-size1);
+    font-weight: var(--weight2);
+    text-align: center;
+}
+
+.our_results p.rating_1{
+    width: var(--mob-our-results-p-w);
+    height: var(--mob-our-results-p-h);
+    font-size: var(--font-size2);
+    font-weight: var(--weight3);
+    text-align: center;
+}
+
+.our_results .rating{
+    width: var(--mob-our-results-rating-w);
+    height: var(--mob-our-results-rating-h);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+}
+
+.our_results .rating .ratin_1{
+    width: var(--rating-w);
+    height: var(--rating-h);
+ 
+    background-image: url(images/pentagone.png);
+    background-size: var(--rating-img-w) var(--rating-img-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ratin_1 h2{
+    font-family: var(--font-fam);
+    font-size: var(--font-size0);
+    width: var(--rating-p1-w);
+    height: var(--rating-p1-h);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ratin_1 p{
+margin-top: 40px;
+
+height: var(--rating-p2-h);
+font-size: var(--font-size3);
+text-align: center;
+
 }
 
  
