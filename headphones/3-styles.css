@@ -602,18 +602,15 @@ section .contact_us{
 }
 
 .inputs{
-  width: var(--form-input-w);
- height: var(--form-input-h);
- display: flex;
- gap: var(--form-input-gap);
- flex-direction: column;
- justify-content: space-between;
-border-bottom: var(--form-input-border-b)
+    width: var(--form-input-w);
+    border-bottom: var(--form-input-border-b);
+  
 }
 
 .inputs input{
     border:none;
     padding: 5px;
+    outline: none;
 
 }
 
@@ -950,20 +947,18 @@ section .contact_us{
 }
 
 .inputs{
-  width: var(--form-input-w);
- height: var(--form-input-h);
- display: flex;
- gap: var(--form-input-gap);
- flex-direction: column;
- justify-content: space-between;
-border-bottom: var(--form-input-border-b)
+    width: var(--form-input-w);
+    border-bottom: var(--form-input-border-b);
+  
 }
 
 .inputs input{
     border:none;
     padding: 5px;
+    outline: none;
 
 }
+
 
 .contact_1 button{
     top: var(--form-btn-t);
@@ -1348,18 +1343,15 @@ section .contact_us{
 }
 
 .inputs{
-  width: var(--form-input-w);
- height: var(--form-input-h);
- display: flex;
- gap: var(--form-input-gap);
- flex-direction: column;
- justify-content: space-between;
-border-bottom: var(--form-input-border-b)
+    width: var(--form-input-w);
+    border-bottom: var(--form-input-border-b);
+  
 }
 
 .inputs input{
     border:none;
     padding: 5px;
+    outline: none;
 
 }
 
